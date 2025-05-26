@@ -29,6 +29,16 @@ int main() {
         campo[navioVertical[i]][colunaVertical] = 3;
     }
 
+    // posiciona o navio na diagonal [0][0] a [2][2]
+    for (int i = 0; i < 3; i++) {
+        campo[i][i] = 3;
+    }
+
+    // posiciona o outro navio na diagonal [6][3] a [8][1]
+    for (int i = 0; i < 3; i++) {
+        campo[6 + i][3 - i] = 3;
+    }
+
 
     // imprimir o campo
     printf("      ");
